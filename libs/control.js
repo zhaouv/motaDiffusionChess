@@ -779,6 +779,7 @@ control.prototype.turnHero = function(direction) {
     }
     core.setHeroLoc('direction', core.turnDirection(':right'));
     core.drawHero();
+    core.aiTurn()
     core.status.route.push("turn");
     core.checkRouteFolding();
 }

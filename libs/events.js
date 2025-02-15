@@ -463,13 +463,13 @@ events.prototype.battle = function (id, x, y, force, callback) {
     core.saveAndStopAutomaticRoute();
     id = id || core.getBlockId(x, y);
     if (!id) return core.clearContinueAutomaticRoute(callback);
-    // 非强制战斗
-    if (!core.enemys.canBattle(id, x, y) && !force && !core.status.event.id) {
-        core.stopSound();
-        core.playSound('操作失败');
-        core.drawTip("你打不过此怪物！", id);
-        return core.clearContinueAutomaticRoute(callback);
-    }
+    // // 非强制战斗
+    // if (!core.enemys.canBattle(id, x, y) && !force && !core.status.event.id) {
+    //     core.stopSound();
+    //     core.playSound('操作失败');
+    //     core.drawTip("你打不过此怪物！", id);
+    //     return core.clearContinueAutomaticRoute(callback);
+    // }
     // 自动存档
     if (!core.status.event.id) core.autosave(true);
     // 战前事件

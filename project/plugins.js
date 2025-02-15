@@ -1258,5 +1258,110 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 		}
 		return false;
 	}, 60);
+},
+    "ai": function () {
+	// 在此增加新插件
+	// a=[]
+	// for (let x = 1; x <= 11; x++) {
+	// 	for (let y = 1; y <= 5; y++) {
+	// 		a.push(`"${x},${y}": aaa`);
+	// 	}
+	// }
+	// console.log(a.join(''))
+	const scanOrder=['up','down','left','right'];
+	const scanMap={'down':1,'up':2,'right':4,'left':8};
+	const moveMap={'down':'up','up':'down','right':'left','left':'right'};
+	this.route_bfs = function (startX, startY, maxDepth, destX, destY) {
+		var route = {}, order = [], canMoveArray = core.generateMovableArray();
+		// 使用优先队列
+		var queue = new PriorityQueue({comparator: function (a,b) { return a.depth - b.depth; }});
+		route[startX + "," + startY] = { 'direction': 0, 'deep': 0 };
+		queue.queue({depth: 0, x: startX, y: startY});
+		var blocks = Object.assign({},core.getMapBlocksObj());
+		while (queue.length!=0) {
+			var curr = queue.dequeue(), deep = curr.depth, nowX = curr.x, nowY = curr.y;
+			if(deep>=(maxDepth||999))break;
+			for (var direction in core.utils.scan) {
+				if (!core.inArray(canMoveArray[nowX][nowY], direction)) continue;
+				var nx = nowX + core.utils.scan[direction].x;
+				var ny = nowY + core.utils.scan[direction].y;
+				if (nx<0 || nx>=core.bigmap.width || ny<0 || ny>=core.bigmap.height) continue;
+				if (route[nx+","+ny] != null){
+					if (route[nx+","+ny].deep == deep+1)route[nx+","+ny].direction+=scanMap[direction];
+					continue;
+				}
+				if (nx == destX && ny == destY) {
+					route[nx+","+ny] = direction;
+					break;
+				}
+				if (blocks[nx + "," + ny]) {
+					if(!blocks[nx + "," + ny].disable && blocks[nx + "," + ny].event.trigger=='battle'){
+						order.push(blocks[nx + "," + ny])
+					}
+					else continue;
+				}
+				route[nx+","+ny] = { 'direction': scanMap[direction], 'deep': deep + 1 };
+				queue.queue({depth: deep + 1, x: nx, y: ny});
+			}
+			if (route[destX+","+destY] != null) break;
+		}
+		return [route,order,blocks];
+	}
+	this.aiTurn=function(){
+		core.aiTurnAction()
+	}
+	this.aiTurnAction=function(){
+		var x=core.getHeroLoc('x'),y=core.getHeroLoc('y')
+		var maxdepth=4
+		if (core.status.floorId=='MT40') {
+			maxdepth=999
+		}
+		var [route,order,blocks]=this.route_bfs(x,y,maxdepth)
+		let todo=[]
+		order.forEach(block=>{
+			var routeinfo=route[block.x+','+block.y]
+			if (routeinfo.deep==1) {
+				// 播放战斗音效和动画
+				core.playSound('attack.mp3');
+				core.drawImage("animate", core.statusBar.icons.battle, 0, 0, 32, 32, (x - 1) * 32, (y - 1) * 32, 32, 32);
+				setTimeout(function () {
+					core.clearMap("animate", (x - 1) * 32, (y - 1) * 32, 32, 32);
+				}, 100);
+				var damageInfo = core.getDamageInfo(block.event.id, null, block.x, block.y, core.status.floorId)
+				if (damageInfo==null)return;
+				if (damageInfo.per_damage >= core.status.hero.hp) {
+					core.status.hero.hp = 0;
+					core.updateStatusBar();
+					core.events.lose('战斗失败');
+					return;
+				}
+				core.status.hero.hp -= damageInfo.per_damage;
+			} else {
+				if (core.inArray(['MT2','MT25','MT30','MT41','MT44','MT49'],core.status.floorId)) {
+					return
+				}
+				for (let index = 0; index < scanOrder.length; index++) {
+					const direction = scanOrder[index];
+					if(!(scanMap[moveMap[direction]]&routeinfo.direction))continue;
+					var nx = block.x + core.utils.scan[direction].x;
+					var ny = block.y + core.utils.scan[direction].y;
+					if (blocks[nx+','+ny])continue;
+					var movetime=50
+					if (core.isReplaying()) {
+						movetime=1
+					}
+					todo.push({"type": "move", "loc": [block.x,block.y], "time": movetime, "keep": true, "steps": [direction+":1"]})
+					blocks[nx+','+ny]=block
+					blocks[x+','+y]=null
+					return
+				}
+			}
+		})
+		if(todo.length){
+			core.insertAction(todo)
+		}
+		core.updateStatusBar();
+		return 111
+	}
 }
 }
