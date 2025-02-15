@@ -1737,10 +1737,10 @@ var functions_d6ad677b_427a_4623_b50f_a445a3b0ef8a =
 	// 名称
 	core.setTextAlign('ui', 'left');
 	var globalFont = (core.status.globalAttribute || core.initStatus.globalAttribute).font;
-	core.fillText('ui', "HTML5 魔塔样板", text_start, top + 35, "#FFD700", "bold 22px " + globalFont);
+	core.fillText('ui', "Roguelike50", text_start, top + 35, "#FFD700", "bold 22px " + globalFont);
 	core.fillText('ui', "版本： " + main.__VERSION__, text_start, top + 80, "#FFFFFF", "bold 17px " + globalFont);
-	core.fillText('ui', "作者： 艾之葵", text_start, top + 112);
-	core.fillText('ui', 'HTML5魔塔交流群：539113091', text_start, top + 112 + 32);
+	core.fillText('ui', "mod作者： ?", text_start, top + 112);
+	core.fillText('ui', '试验机制之作', text_start, top + 112 + 32);
 	// TODO: 写自己的“关于”页面，每次增加32像素即可
 	core.fillText('ui', '(C) 1998 - 2000 Oz & Kenichi', text_start, top + 180);
 	core.fillText('ui', '(C) 1996 N.W', text_start, top + 180 + 27);
