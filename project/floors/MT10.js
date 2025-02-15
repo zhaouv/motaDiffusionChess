@@ -335,20 +335,21 @@ main.floors.MT10=
                         "time": 200,
                         "keep": true,
                         "steps": [
-                            "up",
-                            "up",
-                            "right",
-                            "right",
-                            "down",
-                            "down",
-                            "down",
-                            "right",
-                            "right",
-                            "up",
-                            "right"
+                            "up:2",
+                            "right:2",
+                            "down:3",
+                            "right:2",
+                            "up:1",
+                            "right:1"
                         ]
                     },
                     "\t[小偷,thief]你总算是帮我解决了这麻烦的骷髅队长 我终于可以上去了 我听说银盾在11楼 银剑在17楼 这消息不知道对你是否有用 下次见",
+                    {
+                        "type": "setValue",
+                        "name": "status:hp",
+                        "operator": "+=",
+                        "value": "6000"
+                    },
                     {
                         "type": "move",
                         "loc": [
@@ -357,7 +358,7 @@ main.floors.MT10=
                         ],
                         "time": 200,
                         "steps": [
-                            "down"
+                            "down:1"
                         ]
                     },
                     {

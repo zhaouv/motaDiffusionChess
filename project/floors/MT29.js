@@ -34,6 +34,12 @@ main.floors.MT29=
         "6,2": [
             "\t[小偷,thief]你来的正好 我这边暗道完工了 一起走吧",
             {
+                "type": "setValue",
+                "name": "status:hp",
+                "operator": "+=",
+                "value": "6000"
+            },
+            {
                 "type": "openDoor",
                 "loc": [
                     6,
@@ -48,15 +54,7 @@ main.floors.MT29=
                 ],
                 "time": 200,
                 "steps": [
-                    "down",
-                    "down",
-                    "down",
-                    "down",
-                    "down",
-                    "down",
-                    "down",
-                    "down",
-                    "down"
+                    "down:9"
                 ]
             },
             {

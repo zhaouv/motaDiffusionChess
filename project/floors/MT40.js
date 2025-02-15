@@ -283,7 +283,337 @@ main.floors.MT40=
         }
     },
     "afterBattle": {
+        "1,1": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "1,2": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "1,3": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "1,4": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "1,5": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "2,1": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
         "2,2": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "2,3": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "2,4": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "2,5": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "3,1": [
             {
                 "type": "if",
                 "condition": "flag:40==12",
@@ -349,106 +679,7 @@ main.floors.MT40=
                 ]
             }
         ],
-        "4,2": [
-            {
-                "type": "if",
-                "condition": "flag:40==12",
-                "true": [
-                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
-                    {
-                        "type": "insert",
-                        "loc": [
-                            0,
-                            7
-                        ]
-                    },
-                    {
-                        "type": "hide",
-                        "loc": [
-                            [
-                                6,
-                                7
-                            ]
-                        ],
-                        "time": 0
-                    }
-                ],
-                "false": [
-                    {
-                        "type": "addValue",
-                        "name": "flag:40",
-                        "value": "1"
-                    }
-                ]
-            }
-        ],
-        "8,2": [
-            {
-                "type": "if",
-                "condition": "flag:40==12",
-                "true": [
-                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
-                    {
-                        "type": "insert",
-                        "loc": [
-                            0,
-                            7
-                        ]
-                    },
-                    {
-                        "type": "hide",
-                        "loc": [
-                            [
-                                6,
-                                7
-                            ]
-                        ],
-                        "time": 0
-                    }
-                ],
-                "false": [
-                    {
-                        "type": "addValue",
-                        "name": "flag:40",
-                        "value": "1"
-                    }
-                ]
-            }
-        ],
-        "9,2": [
-            {
-                "type": "if",
-                "condition": "flag:40==12",
-                "true": [
-                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
-                    {
-                        "type": "insert",
-                        "loc": [
-                            0,
-                            7
-                        ]
-                    },
-                    {
-                        "type": "hide",
-                        "loc": [
-                            [
-                                6,
-                                7
-                            ]
-                        ],
-                        "time": 0
-                    }
-                ],
-                "false": [
-                    {
-                        "type": "addValue",
-                        "name": "flag:40",
-                        "value": "1"
-                    }
-                ]
-            }
-        ],
-        "10,2": [
+        "3,3": [
             {
                 "type": "if",
                 "condition": "flag:40==12",
@@ -514,7 +745,271 @@ main.floors.MT40=
                 ]
             }
         ],
+        "3,5": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "4,1": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "4,2": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "4,3": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
         "4,4": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "4,5": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "5,1": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "5,2": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "5,3": [
             {
                 "type": "if",
                 "condition": "flag:40==12",
@@ -580,7 +1075,436 @@ main.floors.MT40=
                 ]
             }
         ],
+        "5,5": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "6,1": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "6,2": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "6,3": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "6,4": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "6,5": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "7,1": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "7,2": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "7,3": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
         "7,4": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "7,5": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "8,1": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "8,2": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "8,3": [
             {
                 "type": "if",
                 "condition": "flag:40==12",
@@ -646,6 +1570,138 @@ main.floors.MT40=
                 ]
             }
         ],
+        "8,5": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "9,1": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "9,2": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "9,3": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
         "9,4": [
             {
                 "type": "if",
@@ -679,7 +1735,733 @@ main.floors.MT40=
                 ]
             }
         ],
-        "6,1": [
+        "9,5": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "10,1": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "10,2": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "10,3": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "10,4": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "10,5": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "11,1": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "11,2": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "11,3": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "11,4": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "11,5": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "4,6": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "4,7": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "5,6": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "5,7": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "6,6": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "6,7": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "7,6": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "7,7": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "8,6": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "8,7": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "7,8": [
+            {
+                "type": "if",
+                "condition": "flag:40==12",
+                "true": [
+                    "\t[骑士队长,yellowKnight]这次先饶了你，下次碰到我会和你正式的决斗，你最好投降。",
+                    {
+                        "type": "insert",
+                        "loc": [
+                            0,
+                            7
+                        ]
+                    },
+                    {
+                        "type": "hide",
+                        "loc": [
+                            [
+                                6,
+                                7
+                            ]
+                        ],
+                        "time": 0
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:40",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "5,8": [
             {
                 "type": "if",
                 "condition": "flag:40==12",

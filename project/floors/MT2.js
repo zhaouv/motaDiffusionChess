@@ -167,14 +167,31 @@ main.floors.MT2=
             "enable": false,
             "noPass": null,
             "displayDamage": true,
+            "opacity": 1,
+            "filter": {
+                "blur": 0,
+                "hue": 0,
+                "grayscale": 0,
+                "invert": false,
+                "shadow": 0
+            },
             "data": [
                 "\t[小偷,thief]我们终于逃出来了 你的剑盾被警卫拿走了 你必须先找到武器 我知道铁剑在5楼 铁盾在9楼 你最好先取到他们 我现在有事要做没法帮你 再见",
+                {
+                    "type": "setValue",
+                    "name": "status:hp",
+                    "operator": "+=",
+                    "value": "6000"
+                },
+                {
+                    "type": "tip",
+                    "text": "小偷帮你恢复了生命值"
+                },
                 {
                     "type": "move",
                     "time": 200,
                     "steps": [
-                        "down",
-                        "down"
+                        "down:2"
                     ]
                 },
                 {

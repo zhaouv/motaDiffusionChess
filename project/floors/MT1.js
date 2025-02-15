@@ -35,34 +35,7 @@ main.floors.MT1=
     ],
     "eachArrive": [],
     "parallelDo": "",
-    "events": {
-        "6,10": [
-            "是否要开启疯狂加血模式？\n在这个模式下，你的生命仍然要超过怪物伤害才能战斗，但实际战斗中，你将不会受到伤害，而是会回复等量的生命。",
-            {
-                "type": "choices",
-                "choices": [
-                    {
-                        "text": "是",
-                        "action": [
-                            {
-                                "type": "setValue",
-                                "name": "flag:addhp",
-                                "value": "1"
-                            }
-                        ]
-                    },
-                    {
-                        "text": "否",
-                        "action": []
-                    }
-                ]
-            },
-            {
-                "type": "hide",
-                "time": 0
-            }
-        ]
-    },
+    "events": {},
     "changeFloor": {
         "1,1": {
             "floorId": ":next",

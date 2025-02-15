@@ -102,6 +102,116 @@ main.floors.MT38=
                     }
                 ]
             }
+        ],
+        "2,10": [
+            {
+                "type": "if",
+                "condition": "flag:38",
+                "true": [
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            2,
+                            9
+                        ]
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:38",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "1,11": [
+            {
+                "type": "if",
+                "condition": "flag:38",
+                "true": [
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            2,
+                            9
+                        ]
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:38",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "2,11": [
+            {
+                "type": "if",
+                "condition": "flag:38",
+                "true": [
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            2,
+                            9
+                        ]
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:38",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "3,11": [
+            {
+                "type": "if",
+                "condition": "flag:38",
+                "true": [
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            2,
+                            9
+                        ]
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:38",
+                        "value": "1"
+                    }
+                ]
+            }
+        ],
+        "4,11": [
+            {
+                "type": "if",
+                "condition": "flag:38",
+                "true": [
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            2,
+                            9
+                        ]
+                    }
+                ],
+                "false": [
+                    {
+                        "type": "addValue",
+                        "name": "flag:38",
+                        "value": "1"
+                    }
+                ]
+            }
         ]
     },
     "afterGetItem": {},

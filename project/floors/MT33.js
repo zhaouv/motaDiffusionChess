@@ -233,6 +233,171 @@ main.floors.MT33=
                 ],
                 "false": []
             }
+        ],
+        "9,6": [
+            {
+                "type": "addValue",
+                "name": "flag:33",
+                "value": "1"
+            },
+            {
+                "type": "if",
+                "condition": "flag:33 == 4",
+                "true": [
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            10,
+                            4
+                        ],
+                        "async": true
+                    },
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            10,
+                            8
+                        ],
+                        "async": true
+                    },
+                    {
+                        "type": "waitAsync"
+                    }
+                ],
+                "false": []
+            }
+        ],
+        "10,5": [
+            {
+                "type": "addValue",
+                "name": "flag:33",
+                "value": "1"
+            },
+            {
+                "type": "if",
+                "condition": "flag:33 == 4",
+                "true": [
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            10,
+                            4
+                        ],
+                        "async": true
+                    },
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            10,
+                            8
+                        ],
+                        "async": true
+                    },
+                    {
+                        "type": "waitAsync"
+                    }
+                ],
+                "false": []
+            }
+        ],
+        "10,6": [
+            {
+                "type": "addValue",
+                "name": "flag:33",
+                "value": "1"
+            },
+            {
+                "type": "if",
+                "condition": "flag:33 == 4",
+                "true": [
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            10,
+                            4
+                        ],
+                        "async": true
+                    },
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            10,
+                            8
+                        ],
+                        "async": true
+                    },
+                    {
+                        "type": "waitAsync"
+                    }
+                ],
+                "false": []
+            }
+        ],
+        "11,6": [
+            {
+                "type": "addValue",
+                "name": "flag:33",
+                "value": "1"
+            },
+            {
+                "type": "if",
+                "condition": "flag:33 == 4",
+                "true": [
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            10,
+                            4
+                        ],
+                        "async": true
+                    },
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            10,
+                            8
+                        ],
+                        "async": true
+                    },
+                    {
+                        "type": "waitAsync"
+                    }
+                ],
+                "false": []
+            }
+        ],
+        "10,7": [
+            {
+                "type": "addValue",
+                "name": "flag:33",
+                "value": "1"
+            },
+            {
+                "type": "if",
+                "condition": "flag:33 == 4",
+                "true": [
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            10,
+                            4
+                        ],
+                        "async": true
+                    },
+                    {
+                        "type": "openDoor",
+                        "loc": [
+                            10,
+                            8
+                        ],
+                        "async": true
+                    },
+                    {
+                        "type": "waitAsync"
+                    }
+                ],
+                "false": []
+            }
         ]
     },
     "afterGetItem": {},

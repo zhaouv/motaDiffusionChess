@@ -9,7 +9,7 @@ main.floors.MT14=
     [  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1],
     [  1,214,  0,214,  1, 28, 21, 31,  1, 21, 21, 21,  1],
     [  1,  0,214,  0,  1,203,  1,214,  1,  0,  0, 21,  1],
-    [  1,  1,  0,  0,  1,  0,  1,  0,  1,  1, 81,  1,  1],
+    [  1, 23,  0,  0,  1,  0,  1,  0,  1,  1, 81,  1,  1],
     [  1,  1, 82,  1,  1, 82,  1, 81,  1,  0,214,  0,  1],
     [  1, 31,  0,  0,206,  0,215,  0,206,  0,  0,  0,  1],
     [  1,  0,203,  0,  1,  1, 81,  1,  1, 31,  0,213,  1],
@@ -43,89 +43,7 @@ main.floors.MT14=
             "time": 0
         }
     },
-    "afterBattle": {
-        "1,1": [
-            {
-                "type": "if",
-                "condition": "flag:14==2",
-                "true": [
-                    {
-                        "type": "playSound",
-                        "name": "door.mp3"
-                    },
-                    {
-                        "type": "setBlock",
-                        "number": "23",
-                        "loc": [
-                            1,
-                            3
-                        ]
-                    }
-                ],
-                "false": [
-                    {
-                        "type": "addValue",
-                        "name": "flag:14",
-                        "value": "1"
-                    }
-                ]
-            }
-        ],
-        "3,1": [
-            {
-                "type": "if",
-                "condition": "flag:14==2",
-                "true": [
-                    {
-                        "type": "playSound",
-                        "name": "door.mp3"
-                    },
-                    {
-                        "type": "setBlock",
-                        "number": "23",
-                        "loc": [
-                            1,
-                            3
-                        ]
-                    }
-                ],
-                "false": [
-                    {
-                        "type": "addValue",
-                        "name": "flag:14",
-                        "value": "1"
-                    }
-                ]
-            }
-        ],
-        "2,2": [
-            {
-                "type": "if",
-                "condition": "flag:14==2",
-                "true": [
-                    {
-                        "type": "playSound",
-                        "name": "door.mp3"
-                    },
-                    {
-                        "type": "setBlock",
-                        "number": "23",
-                        "loc": [
-                            1,
-                            3
-                        ]
-                    }
-                ],
-                "false": [
-                    {
-                        "type": "addValue",
-                        "name": "flag:14",
-                        "value": "1"
-                    }
-                ]
-            }
-        ]
-    },
+    "afterBattle": {},
     "afterGetItem": {},
     "afterOpenDoor": {},
     "cannotMove": {},
