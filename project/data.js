@@ -176,8 +176,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 	},
 	"firstData": {
 		"title": "用传统Roguelike的方式打开50层魔塔",
-		"name": "Roguelike50",
-		"version": "Ver 1.0",
+		"name": "51_Roguelike",
+		"version": "Ver 1.0.1",
 		"floorId": "MT1",
 		"hero": {
 			"image": "hero.png",

@@ -779,7 +779,7 @@ control.prototype.turnHero = function(direction) {
     }
     core.setHeroLoc('direction', core.turnDirection(':right'));
     core.drawHero();
-    core.aiTurn()
+    core.aiTurn({'from':'turn'})
     core.status.route.push("turn");
     core.checkRouteFolding();
 }
@@ -1319,6 +1319,7 @@ control.prototype._drawDamage_draw = function (ctx, onMap) {
 ////// 选择录像文件 //////
 control.prototype.chooseReplayFile = function () {
     core.readFile(function (obj) {
+        if (obj.name=='Roguelike50')obj.name = core.firstData.name
         if (obj.name!=core.firstData.name) return alert("存档和游戏不一致！");
         if (!obj.route) return alert("无效的录像！");
         var _replay = function () {

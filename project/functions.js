@@ -286,7 +286,7 @@ var functions_d6ad677b_427a_4623_b50f_a445a3b0ef8a =
 		//core.status.hero.hp -= damageInfo.per_damage;
 		core.setEnemyOnPoint(x,y,core.status.floorId,'hp',damageInfo.hero_per_damage,'-=');
 		core.updateStatusBar();
-		core.aiTurn()
+		core.aiTurn({'from':'battle'})
 		// core.clearContinueAutomaticRoute();
 		if (core.status.event.id == null)
 			core.continueAutomaticRoute();
@@ -432,7 +432,7 @@ var functions_d6ad677b_427a_4623_b50f_a445a3b0ef8a =
 	}
 
 	// 如果已有事件正在处理中
-	core.aiTurn()
+	core.aiTurn({'from':'kill'})
 	if (core.status.event.id == null)
 		core.continueAutomaticRoute();
 	else
@@ -1520,7 +1520,7 @@ var functions_d6ad677b_427a_4623_b50f_a445a3b0ef8a =
 	}
 
 	// ------ 检查目标点事件 END ------ //
-	if(block == null || block.event.trigger !== "changeFloor")core.aiTurn()
+	if(block == null || block.event.trigger !== "changeFloor")core.aiTurn({'from':'step'})
 
 	// 如需强行终止行走可以在这里条件判定：
 	// core.stopAutomaticRoute();

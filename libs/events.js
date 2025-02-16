@@ -471,7 +471,9 @@ events.prototype.battle = function (id, x, y, force, callback) {
     //     return core.clearContinueAutomaticRoute(callback);
     // }
     // 自动存档
-    if (!core.status.event.id) core.autosave(true);
+    if (!core.status.event.id) {
+        if(core.getEnemyValue(id, 'hp', x, y, core.status.floorId)==core.getEnemyValue(id, 'hp'))core.autosave(true);
+    }
     // 战前事件
     if (!this.beforeBattle(id, x, y))
         return core.clearContinueAutomaticRoute(callback);

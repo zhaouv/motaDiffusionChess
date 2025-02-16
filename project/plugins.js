@@ -1307,10 +1307,10 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 		}
 		return [route,order,blocks];
 	}
-	this.aiTurn=function(){
-		core.aiTurnAction()
+	this.aiTurn=function(args){
+		return core.aiTurnAction(args)
 	}
-	this.aiTurnAction=function(){
+	this.aiTurnAction=function(args){
 		var x=core.getHeroLoc('x'),y=core.getHeroLoc('y')
 		var maxdepth=4
 		if (core.status.floorId=='MT40') {
@@ -1328,7 +1328,9 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 					core.clearMap("animate", (x - 1) * 32, (y - 1) * 32, 32, 32);
 				}, 100);
 				var damageInfo = core.getDamageInfo(block.event.id, null, block.x, block.y, core.status.floorId)
-				if (damageInfo==null)return;
+				if (damageInfo==null){
+					damageInfo={'per_damage':core.getEnemyValue(block.event.id, 'atk',block.x, block.y, core.status.floorId)-core.getRealStatusOrDefault(core.status.hero, 'def')}
+				};
 				if (damageInfo.per_damage >= core.status.hero.hp) {
 					core.status.hero.hp = 0;
 					core.updateStatusBar();
@@ -1358,10 +1360,19 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			}
 		})
 		if(todo.length){
-			core.insertAction(todo)
+			// console.log(JSON.stringify(core.status.automaticRoute))
+			if(args.from==='step')core.saveAndStopAutomaticRoute();
+			var moveStep = core.status.automaticRoute.moveStepBeforeStop;
+			core.insertAction(todo,null,null,args.from==='step'?()=>{
+				core.status.automaticRoute.moveStepBeforeStop = moveStep
+				if (core.status.event.id == null)
+					core.continueAutomaticRoute();
+				else
+					core.clearContinueAutomaticRoute();
+			}:null)
 		}
 		core.updateStatusBar();
-		return 111
+		return {'movingCount':todo.length}
 	}
 }
 }

@@ -579,7 +579,7 @@ actions.prototype._sys_ondown = function (x, y, px, py) {
     clearTimeout(core.timeout.onDownTimeout);
     core.timeout.onDownTimeout = null;
     core.status.preview.prepareDragging = false;
-    if (!core.hasFlag('__lockViewport__') && (core.status.thisMap.width > core.__SIZE__ || core.status.thisMap.height > core.__SIZE__)) {
+    if (false && !core.hasFlag('__lockViewport__') && (core.status.thisMap.width > core.__SIZE__ || core.status.thisMap.height > core.__SIZE__)) {
         core.status.preview.prepareDragging = true;
         core.status.preview.px = px;
         core.status.preview.py = py;
