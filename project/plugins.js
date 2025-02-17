@@ -1318,6 +1318,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 		}
 		var [route,order,blocks]=this.route_bfs(x,y,maxdepth)
 		let todo=[]
+		// console.log(route,order,blocks)
 		order.forEach(block=>{
 			var routeinfo=route[block.x+','+block.y]
 			if (routeinfo.deep==1) {
@@ -1352,9 +1353,18 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 					if (core.isReplaying()) {
 						movetime=1
 					}
-					todo.push({"type": "move", "loc": [block.x,block.y], "time": movetime, "keep": true, "steps": [direction+":1"]})
+					// todo.push({"type": "move", "loc": [block.x,block.y], "time": movetime, "keep": true, "steps": [direction+":1"]})
+					// todo.push({"type": "move", "loc": [block.x,block.y], "time": movetime, "keep": true, "async":true, "steps": [direction+":1"]})
+
+					// todo.push({"type": "move", "loc": [block.x,block.y], "time": movetime, "keep": false, "async":true, "steps": [direction+":1"]})
+					// moveBlock(block.x, block.y, [direction], movetime, false, null)
+					core.removeBlock(block.x, block.y)
+					core.setBlock(block.id, nx, ny);
+					core.moveEnemyOnPoint(block.x, block.y, nx, ny);
+
 					blocks[nx+','+ny]=block
 					blocks[x+','+y]=null
+					// blocks[block.x+','+block.y]=null
 					return
 				}
 			}

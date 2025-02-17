@@ -943,7 +943,7 @@ maps.prototype._automaticRoute_deepAdd = function (x, y, blocks) {
         // 绕过血瓶和绿宝石
         if (core.hasFlag('__potionNoRouting__') && (id.endsWith("Potion") || id == 'greenGem')) deepAdd += 100;
         // 绕过传送点
-        // if (block.event.trigger == 'changeFloor') deepAdd+=10;
+        if (block.event.trigger == 'changeFloor') deepAdd+=10;
     }
     // 绕过存在伤害的地方
     deepAdd += (core.status.checkBlock.damage[x+","+y]||0) * 100;
