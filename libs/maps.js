@@ -921,7 +921,10 @@ maps.prototype._automaticRoute_bfs = function (startX, startY, destX, destY) {
                 break;
             }
             // 不可通行
-            if (core.noPass(nx, ny)) continue;
+            if (core.noPass(nx, ny)) {
+                if(!blocks[nx + "," + ny].disable && blocks[nx + "," + ny].event.trigger=='battle');
+                else continue;
+            }
             route[nx+","+ny] = direction;
             queue.queue({depth: deep + this._automaticRoute_deepAdd(nx, ny, blocks), x: nx, y: ny});
         }
