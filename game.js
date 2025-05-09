@@ -212,6 +212,7 @@ gameview.listenGame=function(){
     })
     game.win.push(function(playerId){
         core.jumpBlock(6,1,playerId===core.getFlag('first2')?0:12,1,300,true,null)
+        core.setBlock(5, 6, 1)
         core.insertAction([
             {"type": "tip", "text": playerId==0?"先手获胜":"后手获胜"}
         ])
