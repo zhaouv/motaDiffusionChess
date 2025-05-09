@@ -1,0 +1,17 @@
+{
+    "name": "hyperDiffusion",
+    "version": "1.0.0",
+    "description": "hyperDiffusion",
+    "main": "server.js",
+    "scripts": {
+        "test": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com:zhaouv/hyperDiffusion.git"
+    },
+    "license": "WTFPL",
+    "dependencies": {
+        "socket.io": "^2.1.1"
+    }
+}
