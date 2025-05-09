@@ -1223,9 +1223,10 @@ control.prototype._updateDamage_damage = function (floorId, onMap) {
                core.status.damage.data.push({text: damageString.damage, px: 32*x+1, py: 32*(y+1)-1, color: damageString.color});
             }
             if (core.flags.displayCritical) {
-               var critical = core.enemys.nextCriticals(block.event.id, 1, x, y, floorId);
-               critical = core.formatBigNumber((critical[0]||[])[0], true);
-               if (critical == '???') critical = '?';
+            //    var critical = core.enemys.nextCriticals(block.event.id, 1, x, y, floorId);
+            //    critical = core.formatBigNumber((critical[0]||[])[0], true);
+            //    if (critical == '???') critical = '?';
+               var critical=''+core.enemys.getDamageInfo(block.event.id,hero.hero2).damage
                core.status.damage.data.push({text: critical, px: 32*x+1, py: 32*(y+1)-11, color: '#FFFFFF'});
             }
         }

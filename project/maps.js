@@ -86,7 +86,7 @@ var maps_90f36752_8815_4be8_b32b_d7fad1d0542e =
 	"102": {"cls":"animates","id":"crystalBottom"},
 	"103": {"cls":"animates","id":"fire"},
 	"104": {"cls":"animates","id":"switch"},
-	"121": {"cls":"npcs","id":"man","trigger":"man"},
+	"121": {"cls":"npcs","id":"man","trigger":null},
 	"122": {"cls":"npcs","id":"woman","trigger":"woman"},
 	"123": {"cls":"npcs","id":"thief"},
 	"124": {"cls":"npcs","id":"fairy"},

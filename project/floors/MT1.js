@@ -13,7 +13,7 @@ main.floors.MT1=
     [  1,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  1],
     [  1,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  1],
     [  1,  1,  0,  0,  0,  0, 53,  0,  0,  0,  0,  1,  1],
-    [  1,  1,  0,  0,  0,  0, 87,  0,  0,  0,  0,  1,  1],
+    [  1,  1,  0,  0,121,  0, 87,  0,  0,  0,  0,  1,  1],
     [  1,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  1],
     [  1,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  1],
     [  1,  1,  0,  0,  0,  0, 45,  0,  0,  0,  0,  1,  1],
@@ -31,11 +31,24 @@ main.floors.MT1=
         {
             "type": "tip",
             "text": "游戏已重启"
+        },
+        {
+            "type": "function",
+            "function": "function(){\n    core.status.hero.hero2={}   ;  core.status.hero.hero2.hp=44000 ;    core.status.hero.hero2.atk=440 ;    core.status.hero.hero2.def=440;\n}"
         }
     ],
     "eachArrive": [],
     "parallelDo": "",
-    "events": {},
+    "events": {
+        "4,7": [
+            "拿到怪物手册后, 左下显示的分别是自己和对手的战斗消耗血量",
+            {
+                "type": "hide",
+                "remove": true,
+                "time": 250
+            }
+        ]
+    },
     "changeFloor": {
         "6,7": {
             "floorId": ":next",
