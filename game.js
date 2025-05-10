@@ -202,6 +202,17 @@ gameview.listenGame=function(){
         if(value===game.CRITICAL||value===game.BLANK)return;
         var [x,y]=[xy%9+1,~~((xy-xy%9)/9)+2]//x-1+(y-2)*9
         console.log(x,y)
+        var event=core.getBlock(x+1,y+1).event
+        var hero2=hero.hero2
+        if(game.playerId===core.getFlag('first2'))[hero.atk,hero.def,hero.hp,hero2.atk,hero2.def,hero2.hp]=[hero2.atk,hero2.def,hero2.hp,hero.atk,hero.def,hero.hp];
+        if (event.cls=='items') {
+            core.getItem(event.id)
+        }
+        if (event.cls=='enemys') {
+            hero.hp-=core.enemys.getDamageInfo(event.id,hero).damage
+        }
+        if(game.playerId===core.getFlag('first2'))[hero.atk,hero.def,hero.hp,hero2.atk,hero2.def,hero2.hp]=[hero2.atk,hero2.def,hero2.hp,hero.atk,hero.def,hero.hp];
+        core.updateStatusBar()
         core.jumpBlock(x+1,y+1,game.playerId!==core.getFlag('first2')?0:12,1,300,true,null)
         core.setBlock(value===game.CHESS?5:1, x+1, y+1)
     })
@@ -211,6 +222,12 @@ gameview.listenGame=function(){
         core.setBlock(playerId!==core.getFlag('first2')?0:90, 10, 1)
     })
     game.win.push(function(playerId){
+        var event=core.getBlock(6,1).event
+        var hero2=hero.hero2
+        if(playerId!==core.getFlag('first2'))[hero.atk,hero.def,hero.hp,hero2.atk,hero2.def,hero2.hp]=[hero2.atk,hero2.def,hero2.hp,hero.atk,hero.def,hero.hp];
+        hero.hp-=core.enemys.getDamageInfo(event.id,hero).damage
+        if(playerId!==core.getFlag('first2'))[hero.atk,hero.def,hero.hp,hero2.atk,hero2.def,hero2.hp]=[hero2.atk,hero2.def,hero2.hp,hero.atk,hero.def,hero.hp];
+        core.updateStatusBar()
         core.jumpBlock(6,1,playerId===core.getFlag('first2')?0:12,1,300,true,null)
         core.setBlock(5, 6, 1)
         core.insertAction([
@@ -374,9 +391,11 @@ initlocalgame = function(){
     ]
     core.insertAction(actions)
     game.win.push(function(playerId){
-        var actions=[]
-        if(playerId==first2)actions.push("\t[你输了]。");
-        if(playerId==1-first2)actions.push("\t[你赢了]！");
+        var actions=[`HP ${hero.hp} vs ${hero.hero2.hp}`]
+        // if(playerId==first2)actions.push("\t[你输了]。");
+        // if(playerId==1-first2)actions.push("\t[你赢了]！");
+        if(hero.hp<hero.hero2.hp)actions.push("\t[你输了]。");
+        else actions.push("\t[你赢了]！");
         actions.push({"type": "function", "function": "function(){\initlocalgame()\n}"})
         //重置游戏并交换先后手
         core.insertAction(actions)
