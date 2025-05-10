@@ -183,6 +183,22 @@ gameview.playerColor=['#fbb','#bbf']
 
 gameview.initTable=function(){
     core.resetMap()
+    var arr = [...Array(81).keys()];
+    for (var i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(core.rand() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    var last=[arr[0]%9+2,~~(arr[0]/9)+3]
+    var xy=[last[0],last[1]]
+    var origin = core.getBlock(xy[0], xy[1]).id
+    for(var ii=1;ii<arr.length;ii++){
+        xy[0]=arr[ii]%9+2
+        xy[1]=~~(arr[ii]/9)+3
+        core.setBlock(core.getBlock(xy[0],xy[1]).id, last[0],last[1])
+        last[0]=xy[0]
+        last[1]=xy[1]
+    }
+    core.setBlock(origin, xy[0], xy[1])
 }
 gameview.xy=function(xy){return gameview.discsvg.children[xy]}
 gameview.printtip=function(tip){
@@ -210,6 +226,7 @@ gameview.listenGame=function(){
         }
         if (event.cls=='enemys') {
             hero.hp-=core.enemys.getDamageInfo(event.id,hero).damage
+            core.playSound('attack.mp3');
         }
         if(game.playerId===core.getFlag('first2'))[hero.atk,hero.def,hero.hp,hero2.atk,hero2.def,hero2.hp]=[hero2.atk,hero2.def,hero2.hp,hero.atk,hero.def,hero.hp];
         core.updateStatusBar()
@@ -226,6 +243,7 @@ gameview.listenGame=function(){
         var hero2=hero.hero2
         if(playerId!==core.getFlag('first2'))[hero.atk,hero.def,hero.hp,hero2.atk,hero2.def,hero2.hp]=[hero2.atk,hero2.def,hero2.hp,hero.atk,hero.def,hero.hp];
         hero.hp-=core.enemys.getDamageInfo(event.id,hero).damage
+        core.playSound('attack.mp3');
         if(playerId!==core.getFlag('first2'))[hero.atk,hero.def,hero.hp,hero2.atk,hero2.def,hero2.hp]=[hero2.atk,hero2.def,hero2.hp,hero.atk,hero.def,hero.hp];
         core.updateStatusBar()
         core.jumpBlock(6,1,playerId===core.getFlag('first2')?0:12,1,300,true,null)
