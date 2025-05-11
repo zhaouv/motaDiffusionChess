@@ -372,7 +372,6 @@ initnetworkgame = function(){
 initlocalgame = function(){
     
     var hard=core.getFlag('hard')
-    hard=2
     var first2=core.getFlag('first2')
     if(core.isset(first2)){
         core.setFlag('first2',1-core.getFlag('first2'))

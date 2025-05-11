@@ -320,9 +320,17 @@ MCAI.prototype.constructor = MCAI
 MCAI.prototype.where=function(){
     var game=this.game
     var choice=[];
+    var mapid=[];
     for(var ii=game.map.length-1;ii>0;ii--){
         if([game.BLANK,game.CRITICAL].indexOf(game.xy(ii))!==-1){
             choice.push(ii);
+            if(globalThis.core)mapid.push(core.getBlock(ii%9+2,~~(ii/9)+3).id)
+        }
+    }
+    for (var mi of [44,43,42,41,40,39,38,37,36,35]) {
+        var ci = mapid.indexOf(mi)
+        if (ci!==-1) {
+            return choice[ci];
         }
     }
     if (choice.length>=40) {
